@@ -1,4 +1,4 @@
-# Joshua Concon's Resume [![Example](https://img.shields.io/badge/example-pdf-green.svg)](https://raw.githubusercontent.com/posquit0/Awesome-CV/master/examples/resume.pdf)
+# Joshua Concon's Resume [![download](https://img.shields.io/badge/example-pdf-green.svg)](https://github.com/JoshuaConcon/resume/raw/master/resume.pdf)
 
 
 [**Awesome CV**](https://github.com/posquit0/Awesome-CV) is the LaTeX template that I build this from.
