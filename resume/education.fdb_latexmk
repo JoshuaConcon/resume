@@ -1,0 +1,14 @@
+# Fdb version 3
+["xdvipdfmx"] 0 "education.xdv" "education.pdf" "education" 0
+  "education.xdv" 0 -1 0 "xelatex"
+  (generated)
+  "education.pdf"
+["xelatex"] 1537065564 "education.tex" "education.xdv" "education" 1537065564
+  "/usr/local/texlive/2018/texmf-dist/web2c/texmf.cnf" 1522066949 33362 cf75436e19743e94a92a6b1b9183c434 ""
+  "/usr/local/texlive/2018/texmf-var/web2c/xetex/xelatex.fmt" 1523934532 3731946 97a69080a287fbc922a3cd699c6fd124 ""
+  "/usr/local/texlive/2018/texmf.cnf" 1523934483 577 0b39adfd7c93507ff20c9c14c2f1a33f ""
+  "education.aux" 1537065449 8 a94a2480d3289e625eea47cd1b285758 ""
+  "education.tex" 1537065561 516 56533cc8163cafca1f2c646b4e2424e1 ""
+  (generated)
+  "education.log"
+  "education.xdv"
