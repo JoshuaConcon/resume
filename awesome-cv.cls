@@ -603,7 +603,8 @@
 \newenvironment{cvitems}{
   \vspace{-4mm}
   \begin{justify}
-  \begin{itemize}[leftmargin=2ex, nosep, noitemsep]
+  \begin{itemize}[leftmargin=2ex, nosep]
+    \setlength\itemsep{0.25em}
     \setlength{\parskip}{0pt}
     \renewcommand{\labelitemi}{\bullet}
 }{
