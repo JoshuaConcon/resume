@@ -604,7 +604,7 @@
   \vspace{-4mm}
   \begin{justify}
   \begin{itemize}[leftmargin=2ex, nosep]
-    \setlength\itemsep{0.25em}
+    \setlength\itemsep{0.35em}
     \setlength{\parskip}{0pt}
     \renewcommand{\labelitemi}{\bullet}
 }{
