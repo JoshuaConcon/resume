@@ -460,7 +460,7 @@
               \setbool{istart}{false}
             }
             {\@headersocialsep}
-          \href{https://www.linkedin.com/in/\@linkedin}{Linkedin: \@linkedin}
+          \href{https://www.linkedin.com/in/\@linkedin}{LinkedIn: \@linkedin}
         }
       \ifthenelse{\isundefined{\@twitter}}
         {}

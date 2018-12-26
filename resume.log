@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2017.5.23)  16 DEC 2018 17:18
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2017.5.23)  26 DEC 2018 12:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -792,46 +792,28 @@ LaTeX Info: Redefining \nameref on input line 73.
 \@outlinefile=\write3
 \openout3 = `resume.out'.
 
- (./resume/education.tex
+ (./resume/experience.tex
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 10.95015pt on input line 16.
+(Font)              scaled to size 10.95015pt on input line 14.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 7.67863pt on input line 16.
+(Font)              scaled to size 7.67863pt on input line 14.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 5.45398pt on input line 16.
+(Font)              scaled to size 5.45398pt on input line 14.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 10.94983pt on input line 16.
+(Font)              scaled to size 10.94983pt on input line 14.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.6784pt on input line 16.
+(Font)              scaled to size 7.6784pt on input line 14.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.45381pt on input line 16.
+(Font)              scaled to size 5.45381pt on input line 14.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/sl' in size <10> not avai
 lable
 (Font)              Font shape `TU/SourceSansPro(1)/m/it' tried instead on inpu
-t line 16.
+t line 14.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/sl' in size <13> not avai
 lable
 (Font)              Font shape `TU/SourceSansPro(1)/m/it' tried instead on inpu
-t line 16.
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 16.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 11.00017pt on input line 16.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 7.70007pt on input line 16.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 5.50008pt on input line 16.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 10.99983pt on input line 16.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.69984pt on input line 16.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.49991pt on input line 16.
+t line 14.
 
-Overfull \hbox (14.22635pt too wide) in alignment at lines 16--16
-[] [] 
- []
-
-) (./resume/experience.tex
 Overfull \hbox (14.22635pt too wide) in alignment at lines 14--14
 [] [] 
  []
@@ -846,7 +828,30 @@ Overfull \hbox (14.22635pt too wide) in alignment at lines 36--36
 [] [] 
  []
 
-) (./resume/projects.tex
+) (./resume/education.tex
+Overfull \hbox (14.22635pt too wide) in alignment at lines 15--15
+[] [] 
+ []
+
+) (./resume/skills.tex
+! Misplaced alignment tab character &.
+\cvskill #1#2-> \skilltypestyle {#1} &
+                                       \skillsetstyle {#2} \\ 
+l.2 ... Java. Familiar in Javascript, HTML/CSS, C}
+                                                  
+? 
+! Misplaced alignment tab character &.
+\cvskill #1#2-> \skilltypestyle {#1} &
+                                       \skillsetstyle {#2} \\ 
+l.3 ...t, Node.js, SQL, GIT, SVN, Django, Jenkins}
+                                                  
+? 
+)
+Underfull \hbox (badness 10000) in paragraph at lines 2--82
+
+ []
+
+(./resume/projects.tex
 Overfull \hbox (14.22635pt too wide) in alignment at lines 14--14
 [] [] 
  []
@@ -866,40 +871,23 @@ Overfull \hbox (14.22635pt too wide) in alignment at lines 47--47
 [] [] 
  []
 
-) (./resume/skills.tex
-! Misplaced alignment tab character &.
-\cvskill #1#2-> \skilltypestyle {#1} &
-                                       \skillsetstyle {#2} \\ 
-l.2 ... Java. Familiar in Javascript, HTML/CSS, C}
-                                                  
-? 
-! Misplaced alignment tab character &.
-\cvskill #1#2-> \skilltypestyle {#1} &
-                                       \skillsetstyle {#2} \\ 
-l.3 ...e, Node.js, SQL, GIT, SVN, Django, Jenkins}
-                                                  
-? 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 2--85
-
- []
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 87.
-[1
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 89.
+ [1
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 87.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 89.
  (./resume.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 87.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 87.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 89.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 89.
  ) 
 Here is how much of TeX's memory you used:
- 24264 strings out of 493005
- 432221 string characters out of 6134596
+ 24239 strings out of 493005
+ 431073 string characters out of 6134596
  617662 words of memory out of 5000000
- 28009 multiletter control sequences out of 15000+600000
- 7724 words of font info for 76 fonts, out of 8000000 for 9000
+ 27994 multiletter control sequences out of 15000+600000
+ 6059 words of font info for 63 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 47i,13n,73p,10384b,484s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 47i,11n,73p,10384b,465s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on resume.pdf (1 page).
