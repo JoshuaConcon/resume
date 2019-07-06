@@ -235,8 +235,9 @@
 \newcommand*{\entrytitlestyle}[1]{{\fontsize{12pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
 \newcommand*{\entrypositionstyle}[1]{{\fontsize{12pt}{1em}\bodyfont\scshape\color{darktext} #1}}
 \newcommand*{\entrydatestyle}[1]{{\fontsize{11pt}{1em}\bodyfont\slshape\color{graytext} #1}}
-\newcommand*{\entrylocationstyle}[1]{{\fontsize{10pt}{1em}\bodyfont\slshape\color{awesome} #1}}
+\newcommand*{\entrylocationstyle}[1]{{\fontsize{11pt}{1em}\bodyfont\slshape\color{awesome} #1}}
 \newcommand*{\descriptionstyle}[1]{{\fontsize{11pt}{1em}\bodyfont\upshape\color{text} #1}}
+\newcommand*{\entryteamstyle}[1]{{\fontsize{11pt}{1em}\bodyfont\slshape\color{graytext} #1}}
 
 % For elements of subentry
 \newcommand*{\subentrytitlestyle}[1]{{\fontsize{8pt}{1em}\bodyfont\mdseries\color{graytext} #1}}
@@ -528,16 +529,16 @@
   \end{center}
 }
 % Define an entry of cv information
-% Usage: \cventry{<position>}{<title>}{<location>}{<date>}{<description>}
-\newcommand*{\cventry}[5]{
+% Usage: \cventry{<position>}{<title>}{<location>}{<date>}{<team>}{<description>}
+\newcommand*{\cventry}[6]{
   \setlength\tabcolsep{0pt}
   \setlength{\extrarowheight}{0pt}
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{12.5cm} R{5cm}}
     \ifempty{#2#3}
       {\entrypositionstyle{#1} & \entrydatestyle{#4} \\}
       {\entrytitlestyle{#2} & \entrylocationstyle{#3} \\
-      \entrypositionstyle{#1} & \entrydatestyle{#4} \\}
-    \multicolumn{2}{L{17cm}}{\descriptionstyle{#5}} \\
+      \entrypositionstyle{#1} \textbf{--} \entryteamstyle{#5} & \entrydatestyle{#4} \\}
+    \multicolumn{2}{L{17cm}}{\descriptionstyle{#6}} \\
   \end{tabular*}
 }
 
