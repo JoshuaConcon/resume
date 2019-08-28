@@ -400,7 +400,7 @@
       \@lastname
     }
     \\
-    \vspace{0.4mm}
+    \vspace{1mm}
     \ifthenelse{\isundefined{\@position}}{}{\headerpositionstyle{\@position\\}}
     \vspace{0.4mm}
     \ifthenelse{\isundefined{\@address}}{}{\headeraddressstyle{\@address\\}}
