@@ -108,7 +108,7 @@
 %-------------------------------------------------------------------------------
 %% Page Layout
 % Configure page margins with geometry
-\geometry{left=2.0cm, top=1.5cm, right=2.0cm, bottom=1cm, footskip=.5cm}
+\geometry{left=2.0cm, top=1cm, right=2.0cm, bottom=1cm, footskip=.5cm}
 
 %% Header & Footer
 % Set offset to each header and offset
@@ -612,7 +612,7 @@
   \begin{onehalfspacing}
     \begin{justify}
       \begin{itemize}[leftmargin=2ex, nosep]
-        \setlength\itemsep{0.35em}
+        \setlength\itemsep{0.30em}
         \setlength{\parskip}{0pt}
         \renewcommand{\labelitemi}{\bullet}
     }{
