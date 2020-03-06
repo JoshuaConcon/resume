@@ -612,7 +612,7 @@
   \begin{onehalfspacing}
     \begin{justify}
       \begin{itemize}[leftmargin=2ex, nosep]
-        \setlength\itemsep{0.30em}
+        \setlength\itemsep{0em}
         \setlength{\parskip}{0pt}
         \renewcommand{\labelitemi}{\bullet}
     }{
