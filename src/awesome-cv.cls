@@ -232,7 +232,7 @@
 \newcommand*{\subsectionstyle}[1]{{\fontsize{12pt}{1em}\bodyfont\scshape\textcolor{text}{#1}}}
 
 % For elements of entry
-\newcommand*{\entrytitlestyle}[1]{{\fontsize{11pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
+\newcommand*{\entrytitlestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
 \newcommand*{\entrypositionstyle}[1]{{\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
 \newcommand*{\entrydatestyle}[1]{{\fontsize{9.5pt}{1em}\bodyfont\bfseries\color{graytext} #1}}
 \newcommand*{\entrylocationstyle}[1]{{\fontsize{9.5pt}{1em}\bodyfont\upshape\color{graytext} #1}}
@@ -585,7 +585,7 @@
 % Define a line of cv information(honor, award or something else)
 % Usage: \cvhonor{<position>}{<title>}{<location>}{<date>}{<description>}
 \newcommand*{\cvhonor}[5]{
-  \honortitlestyle{#2} | \honorpositionstyle{#1} \honordescriptionstyle{#5} & \honorlocationstyle{#3} | \honordatestyle{#4}
+  \honortitlestyle{#2} | \honorpositionstyle{#1} \honordescriptionstyle{#5} & \honordatestyle{#4}
   \\
 }
 
