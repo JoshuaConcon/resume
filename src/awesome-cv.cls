@@ -108,7 +108,7 @@
 %-------------------------------------------------------------------------------
 %% Page Layout
 % Configure page margins with geometry
-\geometry{left=2.0cm, top=1cm, right=2.0cm, bottom=1cm, footskip=.5cm}
+\geometry{left=1.5cm, top=1cm, right=1.5cm, bottom=1cm, footskip=.5cm}
 
 %% Header & Footer
 % Set offset to each header and offset
@@ -233,7 +233,7 @@
 
 % For elements of entry
 \newcommand*{\entrytitlestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
-\newcommand*{\entrypositionstyle}[1]{{\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
+\newcommand*{\entrypositionstyle}[1]{{\fontsize{9.5pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
 \newcommand*{\entrydatestyle}[1]{{\fontsize{9.5pt}{1em}\bodyfont\bfseries\color{graytext} #1}}
 \newcommand*{\entrylocationstyle}[1]{{\fontsize{9.5pt}{1em}\bodyfont\upshape\color{graytext} #1}}
 \newcommand*{\descriptionstyle}[1]{{\fontsize{9pt}{1em}\bodyfont\upshape\color{text} #1}}
@@ -534,13 +534,25 @@
 \newcommand*{\cventry}[6]{
   \setlength\tabcolsep{1pt}
   \setlength{\extrarowheight}{1pt}
-  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{12cm} R{5.06cm}}
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{12.5cm} R{5.56cm}}
     \ifempty{#3} % if no location
-      {\entrytitlestyle{#2} $|$ \entrypositionstyle{#1} \textbf{--} \entryteamstyle{#5} & \entrydatestyle{#4} \\}
       {
-      \ifempty{#5} % if no team
-        {\entrytitlestyle{#2} $|$ \entrypositionstyle{#1} & \entrylocationstyle{#3} $|$ \entrydatestyle{#4} \\}
-        {\entrytitlestyle{#2} $|$ \entrypositionstyle{#1} \textbf{--} \entryteamstyle{#5} & \entrylocationstyle{#3} $|$ \entrydatestyle{#4} \\}
+        \ifempty{#5}
+          {
+            \entrytitlestyle{#2} $|$ \entrypositionstyle{#1} & \entrydatestyle{#4} \\
+          }
+          {
+            \entrytitlestyle{#2} $|$ \entrypositionstyle{#1} \textbf{--} \entryteamstyle{#5} & \entrydatestyle{#4} \\
+          }
+      }
+      {
+        \ifempty{#5} % if no team
+          {
+            \entrytitlestyle{#2} $|$ \entrypositionstyle{#1} & \entrylocationstyle{#3} $|$ \entrydatestyle{#4} \\
+          }
+          {
+            \entrytitlestyle{#2} $|$ \entrypositionstyle{#1} \textbf{--} \entryteamstyle{#5} & \entrylocationstyle{#3} $|$ \entrydatestyle{#4} \\
+          }
 %        \entrytitlestyle{#2} & \entrylocationstyle{#3} \\
 %        \entrypositionstyle{#1} \textbf{--} \entryteamstyle{#5} & \entrydatestyle{#4} \\
       }
