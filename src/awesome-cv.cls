@@ -222,21 +222,21 @@
 % Configure styles for each CV elements
 % For fundamental structures
 \newcommand*{\headerfirstnamestyle}[1]{{\fontsize{25pt}{1em}\headerfont\color{text} #1}}
-\newcommand*{\headerlastnamestyle}[1]{{\fontsize{25pt}{1em}\headerfont\bfseries\color{text} #1}}
+\newcommand*{\headerlastnamestyle}[1]{{\fontsize{25pt}{1em}\headerfont\bfseries\color{awesome} #1}}
 \newcommand*{\headerpositionstyle}[1]{{\fontsize{7.6pt}{1em}\bodyfont\scshape\color{awesome} #1}}
 \newcommand*{\headeraddressstyle}[1]{{\fontsize{8pt}{1em}\headerfont\itshape\color{lighttext} #1}}
 \newcommand*{\headersocialstyle}[1]{{\fontsize{7.5pt}{1em}\headerfont\color{text} #1}}
 \newcommand*{\headerquotestyle}[1]{{\fontsize{9pt}{1em}\bodyfont\itshape\color{darktext} #1}}
 \newcommand*{\footerstyle}[1]{{\fontsize{8pt}{1em}\footerfont\scshape\color{lighttext} #1}}
-\newcommand*{\sectionstyle}[1]{{\fontsize{18pt}{1em}\bodyfont\bfseries\color{awesome}\@sectioncolor #1}}
+\newcommand*{\sectionstyle}[1]{{\fontsize{16pt}{1em}\bodyfont\bfseries\color{awesome}\@sectioncolor #1}}
 \newcommand*{\subsectionstyle}[1]{{\fontsize{12pt}{1em}\bodyfont\scshape\textcolor{text}{#1}}}
 
 % For elements of entry
-\newcommand*{\entrytitlestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
-\newcommand*{\entrypositionstyle}[1]{{\fontsize{9.5pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
+\newcommand*{\entrytitlestyle}[1]{{\fontsize{11pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
+\newcommand*{\entrypositionstyle}[1]{{\fontsize{10.5pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
 \newcommand*{\entrydatestyle}[1]{{\fontsize{9.5pt}{1em}\bodyfont\bfseries\color{graytext} #1}}
-\newcommand*{\entrylocationstyle}[1]{{\fontsize{9.5pt}{1em}\bodyfont\upshape\color{graytext} #1}}
-\newcommand*{\descriptionstyle}[1]{{\fontsize{9pt}{1em}\bodyfont\upshape\color{text} #1}}
+\newcommand*{\entrylocationstyle}[1]{{\fontsize{10.5pt}{1em}\bodyfont\upshape\color{graytext} #1}}
+\newcommand*{\descriptionstyle}[1]{{\fontsize{9pt}{1em}\bodyfont\upshape\color{graytext} #1}}
 \newcommand*{\entryteamstyle}[1]{{\fontsize{9pt}{1em}\bodyfont\slshape\color{graytext} #1}}
 
 % For elements of subentry
@@ -247,9 +247,9 @@
 \newcommand*{\subdescriptionstyle}[1]{{\fontsize{8pt}{1em}\bodyfont\upshape\color{text} #1}}
 
 % For elements of honor
-\newcommand*{\honortitlestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\bfseries\color{awesome} #1}}
-\newcommand*{\honorpositionstyle}[1]{{\fontsize{9.5pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
-\newcommand*{\honordatestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\bfseries\color{graytext} #1}}
+\newcommand*{\honortitlestyle}[1]{{\fontsize{11pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
+\newcommand*{\honorpositionstyle}[1]{{\fontsize{10.5pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
+\newcommand*{\honordatestyle}[1]{{\fontsize{10.5pt}{1em}\bodyfont\bfseries\color{graytext} #1}}
 \newcommand*{\honorlocationstyle}[1]{{\fontsize{9pt}{1em}\bodyfont\slshape\color{graytext} #1}}
 \newcommand*{\honordescriptionstyle}[1]{{\fontsize{9.5pt}{1em}\bodyfont\color{graytext} #1}}
 
@@ -512,7 +512,7 @@
   \par
   \phantomsection{}
   \sectionstyle{#1}
-  \color{gray}\vhrulefill{0.9pt}
+  \color{awesome}{\vhrulefill{0.9pt}}
   \par\nobreak\addvspace{0ex}
 }
 
@@ -534,7 +534,7 @@
 \newcommand*{\cventry}[6]{
   \setlength\tabcolsep{1pt}
   \setlength{\extrarowheight}{1pt}
-  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{12.5cm} R{5.56cm}}
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{13.5cm} R{4.56cm}}
     \ifempty{#3} % if no location
       {
         \ifempty{#5}
@@ -556,7 +556,7 @@
 %        \entrytitlestyle{#2} & \entrylocationstyle{#3} \\
 %        \entrypositionstyle{#1} \textbf{--} \entryteamstyle{#5} & \entrydatestyle{#4} \\
       }
-    \multicolumn{2}{L{17cm}}{\descriptionstyle{#6}} \\
+    \multicolumn{2}{L{18cm}}{\descriptionstyle{#6}} \\
   \end{tabular*}
 }
 
@@ -589,7 +589,7 @@
   \begin{center}
     \setlength\tabcolsep{0pt}
     \setlength{\extrarowheight}{0pt}
-    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{15.05cm} R{2.56cm}}
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{15.55cm} R{2.06cm}}
 }{
     \end{tabular*}
   \end{center}
