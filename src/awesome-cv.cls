@@ -232,12 +232,12 @@
 \newcommand*{\subsectionstyle}[1]{{\fontsize{12pt}{1em}\bodyfont\scshape\textcolor{text}{#1}}}
 
 % For elements of entry
-\newcommand*{\entrytitlestyle}[1]{{\fontsize{11pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
-\newcommand*{\entrypositionstyle}[1]{{\fontsize{11pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
-\newcommand*{\entrydatestyle}[1]{{\fontsize{11pt}{1em}\bodyfont\bfseries\color{graytext} #1}}
-\newcommand*{\entrylocationstyle}[1]{{\fontsize{10.5pt}{1em}\bodyfont\upshape\color{graytext} #1}}
-\newcommand*{\descriptionstyle}[1]{{\fontsize{10pt}{1em}\bodyfont\upshape\color{graytext} #1}}
-\newcommand*{\entryteamstyle}[1]{{\fontsize{9pt}{1em}\bodyfont\slshape\color{graytext} #1}}
+\newcommand*{\entrytitlestyle}[1]{{\fontsize{11pt}{1em}\bodyfont\bfseries\color{awesome} #1}}
+\newcommand*{\entrypositionstyle}[1]{{\fontsize{11pt}{1em}\bodyfont\color{darktext} #1}}
+\newcommand*{\entrydatestyle}[1]{{\fontsize{11pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
+\newcommand*{\entrylocationstyle}[1]{{\fontsize{10.5pt}{1em}\bodyfont\upshape\color{darktext} #1}}
+\newcommand*{\descriptionstyle}[1]{{\fontsize{10pt}{1em}\bodyfont\upshape\color{darktext} #1}}
+\newcommand*{\entryteamstyle}[1]{{\fontsize{11pt}{1em}\bodyfont\color{darktext} #1}}
 
 % For elements of subentry
 \newcommand*{\subentrytitlestyle}[1]{{\fontsize{8pt}{1em}\bodyfont\mdseries\color{graytext} #1}}
@@ -247,15 +247,15 @@
 \newcommand*{\subdescriptionstyle}[1]{{\fontsize{8pt}{1em}\bodyfont\upshape\color{text} #1}}
 
 % For elements of honor
-\newcommand*{\honortitlestyle}[1]{{\fontsize{11pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
-\newcommand*{\honorpositionstyle}[1]{{\fontsize{10.5pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
+\newcommand*{\honortitlestyle}[1]{{\fontsize{11pt}{1em}\bodyfont\bfseries\color{awesome} #1}}
+\newcommand*{\honorpositionstyle}[1]{{\fontsize{11pt}{1em}\bodyfont\color{darktext} #1}}
 \newcommand*{\honordatestyle}[1]{{\fontsize{10.5pt}{1em}\bodyfont\bfseries\color{graytext} #1}}
 \newcommand*{\honorlocationstyle}[1]{{\fontsize{9pt}{1em}\bodyfont\slshape\color{graytext} #1}}
-\newcommand*{\honordescriptionstyle}[1]{{\fontsize{10pt}{1em}\bodyfont\color{graytext} #1}}
+\newcommand*{\honordescriptionstyle}[1]{{\fontsize{10pt}{1em}\bodyfont\color{darktext} #1}}
 
 % For elements of skill
 \newcommand*{\skilltypestyle}[1]{{\fontsize{11pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
-\newcommand*{\skillsetstyle}[1]{{\fontsize{9.5pt}{1em}\bodyfont\upshape\color{text} #1}}
+\newcommand*{\skillsetstyle}[1]{{\fontsize{11pt}{1em}\bodyfont\upshape\color{text} #1}}
 
 % For elements of the cover letter
 \newcommand*{\paragraphstyle}[1]{{\fontsize{14pt}{1em}\bodyfont\bfseries\color{text}\@sectioncolor #1}}
@@ -539,10 +539,12 @@
       {
         \ifempty{#5}
           {
-            \entrytitlestyle{#2} $|$ \entrypositionstyle{#1} & \entrydatestyle{#4} \\
+            \ifempty{#1}
+              {\entrytitlestyle{#2} & \entrydatestyle{#4} \\}
+              {\entrytitlestyle{#2}, \entrypositionstyle{#1} & \entrydatestyle{#4} \\}
           }
           {
-            \entrytitlestyle{#2} $|$ \entrypositionstyle{#1} \textbf{--} \entryteamstyle{#5} & \entrydatestyle{#4} \\
+            \entrytitlestyle{#2}, \entrypositionstyle{#1} \textbf{--} \entryteamstyle{#5} & \entrydatestyle{#4} \\
           }
       }
       {
@@ -599,10 +601,12 @@
 \newcommand*{\cvhonor}[5]{
   \ifempty{#4}
     {
-      \honortitlestyle{#2} | \honorpositionstyle{#1} \honordescriptionstyle{#5} \\
+      \ifempty{#1}
+        {\honortitlestyle{#2}: \honordescriptionstyle{#5} \\}
+        {\honortitlestyle{#2}, \honorpositionstyle{#1}: \honordescriptionstyle{#5} \\}
     }
     {
-      \honortitlestyle{#2} | \honorpositionstyle{#1} \honordescriptionstyle{#5} & \honordatestyle{#4} \\
+      \honortitlestyle{#2} \honorpositionstyle{#1} \honordescriptionstyle{#5} & \honordatestyle{#4} \\
     }
 }
 
@@ -631,7 +635,7 @@
       \begin{itemize}[leftmargin=2ex, nosep]
         \setlength\itemsep{0em}
         \setlength{\parskip}{0pt}
-        \renewcommand{\labelitemi}{\bullet}
+        \renewcommand{\labelitemi}{---}
     }{
       \end{itemize}
     \end{justify}
