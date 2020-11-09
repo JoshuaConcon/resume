@@ -233,7 +233,7 @@
 
 % For elements of entry
 \newcommand*{\entrytitlestyle}[1]{{\fontsize{11pt}{1em}\bodyfont\bfseries\color{awesome} #1}}
-\newcommand*{\entrypositionstyle}[1]{{\fontsize{11pt}{1em}\bodyfont\color{darktext} #1}}
+\newcommand*{\entrypositionstyle}[1]{{\fontsize{11pt}{1em}\bodyfont\slshape\color{darktext} #1}}
 \newcommand*{\entrydatestyle}[1]{{\fontsize{11pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
 \newcommand*{\entrylocationstyle}[1]{{\fontsize{10.5pt}{1em}\bodyfont\upshape\color{darktext} #1}}
 \newcommand*{\descriptionstyle}[1]{{\fontsize{10pt}{1em}\bodyfont\upshape\color{darktext} #1}}
@@ -544,7 +544,7 @@
               {\entrytitlestyle{#2}, \entrypositionstyle{#1} & \entrydatestyle{#4} \\}
           }
           {
-            \entrytitlestyle{#2}, \entrypositionstyle{#1} \textbf{--} \entryteamstyle{#5} & \entrydatestyle{#4} \\
+            \entrytitlestyle{#2}, \entryteamstyle{#5}, \entrypositionstyle{#1}  & \entrydatestyle{#4} \\
           }
       }
       {
@@ -591,7 +591,7 @@
   \begin{center}
     \setlength\tabcolsep{0pt}
     \setlength{\extrarowheight}{0pt}
-    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{15.55cm} R{2.06cm}}
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{17.61cm} R{0.00cm}}
 }{
     \end{tabular*}
   \end{center}
