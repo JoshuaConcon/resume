@@ -3,6 +3,6 @@
 
 [**Awesome CV**](https://github.com/posquit0/Awesome-CV) is the LaTeX template that I build this from.
 
-## How to Build
+## How to Build Resume
 
 `make`

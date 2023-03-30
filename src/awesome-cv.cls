@@ -108,7 +108,7 @@
 %-------------------------------------------------------------------------------
 %% Page Layout
 % Configure page margins with geometry
-\geometry{left=1.5cm, top=1.5cm, right=1.5cm, bottom=1.5cm, footskip=.5cm}
+\geometry{left=1cm, top=1cm, right=1cm, bottom=1cm, footskip=.5cm}
 
 %% Header & Footer
 % Set offset to each header and offset
@@ -206,9 +206,9 @@
 % For fundamental structures
 \newcommand*{\headerfirstnamestyle}[1]{{\fontsize{25pt}{1em}\headerfont\color{awesome} #1}}
 \newcommand*{\headerlastnamestyle}[1]{{\fontsize{25pt}{1em}\headerfont\color{awesome} #1}}
-\newcommand*{\headerpositionstyle}[1]{{\fontsize{7.6pt}{1em}\bodyfont\scshape\color{awesome} #1}}
-\newcommand*{\headeraddressstyle}[1]{{\fontsize{8pt}{1em}\headerfont\itshape\color{lighttext} #1}}
-\newcommand*{\headersocialstyle}[1]{{\fontsize{7.5pt}{1em}\headerfont\color{text} #1}}
+\newcommand*{\headerpositionstyle}[1]{{\fontsize{8pt}{1em}\bodyfont\scshape\color{awesome} #1}}
+\newcommand*{\headeraddressstyle}[1]{{\fontsize{8pt}{1em}\headerfont\itshape\color{awesome} #1}}
+\newcommand*{\headersocialstyle}[1]{{\fontsize{8pt}{1em}\headerfont\color{awesome} #1}}
 \newcommand*{\headerquotestyle}[1]{{\fontsize{9pt}{1em}\bodyfont\itshape\color{darktext} #1}}
 \newcommand*{\footerstyle}[1]{{\fontsize{8pt}{1em}\footerfont\scshape\color{lighttext} #1}}
 \newcommand*{\sectionstyle}[1]{{\fontsize{14pt}{1em}\bodyfont\bfseries\color{awesome}\@sectioncolor #1}}
@@ -218,7 +218,7 @@
 \newcommand*{\entrytitlestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\bfseries\color{awesome} #1}}
 \newcommand*{\entrypositionstyle}[1]{{\fontsize{10pt}{1em}\bodyfont\color{awesome} #1}}
 \newcommand*{\entrydatestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\bfseries\color{awesome} #1}}
-\newcommand*{\entrylocationstyle}[1]{{\fontsize{10.5pt}{1em}\bodyfont\upshape\color{awesome} #1}}
+\newcommand*{\entrylocationstyle}[1]{{\fontsize{10pt}{1em}\bodyfont\upshape\color{awesome} #1}}
 \newcommand*{\descriptionstyle}[1]{{\fontsize{10pt}{1em}\bodyfont\upshape\color{darktext} #1}}
 \newcommand*{\entryteamstyle}[1]{{\fontsize{10pt}{1em}\bodyfont\slshape\color{awesome} #1}}
 
@@ -495,6 +495,7 @@
   \par
   \phantomsection{}
   \sectionstyle{#1}
+  \par\nobreak\addvspace{-3ex}
   \color{awesome}{\vhrulefill{0.9pt}}
   \par\nobreak\addvspace{0ex}
 }
@@ -615,7 +616,7 @@
   \vspace{-5mm}
   \begin{onehalfspacing}
     \begin{justify}
-      \begin{itemize}[leftmargin=2ex, nosep]
+      \begin{itemize}[leftmargin=-4ex, nosep]
         \setlength\itemsep{0em}
         \setlength{\parskip}{0pt}
         \renewcommand{\labelitemi}{---}
