@@ -1,5 +1,5 @@
 
-test:
+buildResume:
 	cd src; xelatex resume.tex; mv ./resume.pdf ..
 
 clean:
