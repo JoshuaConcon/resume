@@ -1,6 +1,6 @@
 
 buildResume:
-	cd resumeSRC; xelatex resume.tex; mv ./resume.pdf ..; cd ..
+	cd src; xelatex resume.tex; cp ./resume.pdf ..; mv ./resume.pdf ../dist/resume.pdf ; cd ..
 
 clean:
-	rm *.log *.out *.xdv *.fls *.fdb_latexmk *.aux *.synctex.gz
+	cd src; rm *.log *.out *.xdv *.fls *.fdb_latexmk *.aux *.synctex.gz; cd ..

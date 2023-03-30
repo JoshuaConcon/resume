@@ -6,3 +6,4 @@
 *.aux
 *.synctex.gz
 .DS_Store
+node_modules
