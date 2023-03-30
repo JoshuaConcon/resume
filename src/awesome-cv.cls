@@ -180,7 +180,7 @@
   ItalicFont=*-It,
   BoldFont=*-Bold,
   BoldItalicFont=*-BoldIt,
-]{SourceSansPro}
+]{CMU}
 
 % Set font for footer (default is Source Sans Pro)
 \newfontfamily\footerfont[
@@ -188,7 +188,7 @@
   UprightFont=*-Regular,
   ItalicFont=*-It,
   BoldFont=*-Bold
-]{SourceSansPro}
+]{CMU}
 
 % Set font for body (default is Source Sans Pro)
 \newfontfamily\bodyfont[
@@ -197,7 +197,7 @@
   ItalicFont=*-It,
   BoldFont=*-Bold,
   BoldItalicFont=*-BoldIt
-]{SourceSansPro}
+]{CMU}
 
 %-------------------------------------------------------------------------------
 %                Configuration for styles
