@@ -4,7 +4,9 @@
   "description": "resume",
   "main": "index.js",
   "scripts": {
-    "deploy": "gh-pages -d dist"
+    "build": "make",
+    "predeploy": "gh-pages -d dist",
+    "deploy": "yarn build && yarn predeploy"
   },
   "repository": {
     "type": "git",
