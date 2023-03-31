@@ -518,7 +518,7 @@
 \newcommand*{\cventry}[6]{
   \setlength\tabcolsep{1pt}
   \setlength{\extrarowheight}{1pt}
-  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{13.5cm} R{4.56cm}}
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{14cm} R{5cm}}
     \ifempty{#3} % if no location
       {
         \ifempty{#5}
