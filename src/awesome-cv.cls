@@ -624,7 +624,7 @@
       \end{itemize}
     \end{justify}
   \end{onehalfspacing}
-  \vspace{-4mm}
+  \vspace{-5mm}
 }
 
 
