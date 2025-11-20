@@ -1,15 +1,27 @@
 \cvsection{Experience}
 \begin{cventries}
   \cventry
+      {Software Development Engineer}
+      {Amazon}
+      {}
+      {Jan 2025 -- Present}
+      {AWS RDS for Db2}
+      {
+        \begin{cvitems}
+          \item {Configured and patched Db2 parameters to reduce historical log sizes of RDS instances by 61\%, resulting in a reduced base volume usage per instance by up to 3.8GB}
+          \item {Refactored Db2 audit logging Integration Tests to reduce S3 Bucket usage by 98\% in the daily integration test runs and reducing the blast radius of S3 failures}
+        \end{cvitems}
+      }
+  \cventry
       {Backend Software Engineer II}
       {GreenShield}
       {}
-      {Jun 2024 -- Present}
+      {Jun 2024 -- Jan 2025}
       {Integrations}
       {
         \begin{cvitems}
-          \item {Managing profile and insurance coverage information for all health care offerings within GreenShield+}
-          \item {Built out custom logic for groupped insurance benefits mapping in Nest.js and GCP}
+          \item {Tuned a mission-critical PostgreSQL Database containing user account data to increase query throughput by 90\%, saving GreenShield up to \$11K per year on Cloud SQL GCP}
+          \item {Refactored the CSV processing of a Nest.js app by partitioning I\slash O intensive tasks, increasing CSV file upload capacity from 10K rows to 500K rows}
         \end{cvitems}
       }
   \cventry
@@ -20,9 +32,9 @@
       {Loyalty}
       {
         \begin{cvitems}
-          \item {Designed and implemented a notifcation flow for the authentication of loyalty users via saved payment methods in AWS SNS allowing for improved analysis of loyalty program}
+          \item {Designed and implemented a notification flow for the authentication of loyalty users via saved payment methods in AWS SNS, allowing for improved analysis of the loyalty program}
           \item {Wrote scripts that updated millions of incomplete DynamoDB data records to reduce support tickets and errors}
-          \item {Converted several components as part of a migration of the Mobile App Core shared between Tim Hortons, Burger King, and Popeyes from Capacitor to React Native, reducing complexity and increasing developer velocity}
+          \item {Converted several components as part of a migration of the Mobile App Core shared between Tim Hortons, Burger King and Popeyes from Capacitor to React Native, reducing complexity and increasing developer velocity}
           \item {Mentored 4 interns and new graduate employees, resulting in 2 successful internship conversions}
         \end{cvitems}
       }
@@ -48,7 +60,7 @@
     {
     \begin{cvitems}
       \item {Built a Node endpoint to validate and intake assets, reducing ad campaign submission time by 140+ hours each}
-      \item {Implemented a diagnostic tool in Flask to find and delete unused advertiser models in an PostgreSQL Database}
+      \item {Implemented a diagnostic tool in Flask to find and delete unused advertiser models in a PostgreSQL Database}
     \end{cvitems}
     }
 
@@ -62,7 +74,7 @@
       \begin{cvitems}
         \item {Built a Django app to monitor runs of the VaR calculation over the bank's assets, allowing for operational costs to be estimated}
         \item {Developed a log monitoring web app in Python for a mission-critical system, quickening the debugging process}
-        \item {Launched new accessibility features in a P\&L web app with Angular, allowing traders to initiate trades quicker}
+        \item {Launched new accessibility features in a P\&L web app with Angular, allowing traders to initiate trades more quickly}
       \end{cvitems}
     }
 \end{cventries}
